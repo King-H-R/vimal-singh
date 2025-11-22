@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="admin-body">
+    <div class="admin-container">
+        <h1>Admin Panel</h1>
+
+        <!-- Very basic login (front-end only, change password before using anywhere public) -->
+        <div id="login-box" class="admin-card">
+            <h2>Login</h2>
+            <input id="admin-username" type="text" placeholder="Username" />
+            <input id="admin-password" type="password" placeholder="Password" />
+            <button id="login-btn">Login</button>
+            <p class="hint">Default: admin / admin123</p>
+        </div>
+
+        <div id="admin-dashboard" class="admin-card hidden">
+            <h2>Portfolio Content</h2>
+
+            <section>
+                <h3>Hero</h3>
+                <input id="hero-name-input" type="text" placeholder="Your name" />
+                <input id="hero-tagline-input" type="text" placeholder="Tagline" />
+            </section>
+
+            <section>
+                <h3>Work Experience (JSON)</h3>
+                <textarea id="work-json" rows="5"></textarea>
+            </section>
+
+            <section>
+                <h3>Education (JSON)</h3>
+                <textarea id="education-json" rows="5"></textarea>
+            </section>
+
+            <section>
+                <h3>Skills (JSON)</h3>
+                <textarea id="skills-json" rows="4"></textarea>
+            </section>
+
+            <section>
+                <h3>Contact (JSON)</h3>
+                <textarea id="contact-json" rows="4"></textarea>
+            </section>
+
+            <button id="save-btn">Save Changes</button>
+            <a class="back-to-site" href="index.html">View Portfolio</a>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>

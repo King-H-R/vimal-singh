@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Vimal | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Interactive background canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="page">
+        <!-- Left timeline & info like the sample design -->
+        <aside class="side-column">
+            <section class="block">
+                <h2 class="section-title">WORK EXPERIENCE</h2>
+                <div id="work-list" class="timeline"></div>
+            </section>
+
+            <section class="block">
+                <h2 class="section-title">PASSION</h2>
+                <ul id="passion-list" class="icon-list"></ul>
+            </section>
+
+            <section class="block">
+                <h2 class="section-title">LANGUAGES</h2>
+                <ul id="languages-list"></ul>
+            </section>
+        </aside>
+
+        <!-- Center column with avatar & summary -->
+        <main class="main-column">
+            <header class="hero">
+                <div class="avatar-circle">
+                    <img src="https://via.placeholder.com/150" alt="Profile" />
+                </div>
+                <div class="hero-text">
+                    <h1 id="hero-name" class="letter-flow">
+                        <!-- letters will be injected by JS -->
+                    </h1>
+                    <p id="hero-tagline" class="tagline"></p>
+                </div>
+            </header>
+
+            <section class="summary block">
+                <p id="summary-text">
+                    With blend of my skills, I wish to add value to every project I work on,
+                    explore creativity, and build human-centric technology solutions.
+                </p>
+            </section>
+
+            <section class="block">
+                <h2 class="section-title">EDUCATION</h2>
+                <div id="education-list" class="timeline"></div>
+            </section>
+        </main>
+
+        <!-- Right column (contact & skills) -->
+        <aside class="side-column">
+            <section class="block">
+                <h2 class="section-title">CONTACT</h2>
+                <ul id="contact-list" class="contact-list"></ul>
+            </section>
+
+            <section class="block">
+                <h2 class="section-title">SOFTWARE SKILLS</h2>
+                <div id="skills-list" class="skills-grid"></div>
+            </section>
+
+            <div class="admin-link">
+                <a href="admin.html">Admin Panel</a>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
